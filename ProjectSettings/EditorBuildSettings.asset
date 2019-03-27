@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: f48f1a880937a0747990f141fc07a17a
+  - enabled: 1
+    path: Assets/Scenes/Mission_Select_Screen.unity
+    guid: 87b2d037bfb896a4388c17137c41fa58
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: b0dd632e3f382ca4b9195c9007964eb3
+  - enabled: 1
+    path: Assets/Scenes/ExplanationScreen.unity
+    guid: f3e771cda06400940a3d429a297088e1
+  - enabled: 1
+    path: Assets/Scenes/TimeUp.unity
+    guid: 691e234ed95047b4082ebe7117f0ec81
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: ab238c04df8cda44b91952d682f6e7f2
+  - enabled: 1
+    path: Assets/Scenes/SampleScene 1.unity
+    guid: ec0e2e28ae24f4d449d91cf365a2fbd8
+  - enabled: 1
+    path: Assets/Scenes/Mission_1.unity
+    guid: 7ed61fcefa61aa74fac6ee9dd6736a68
+  - enabled: 1
+    path: Assets/Scenes/Mission_2.unity
+    guid: cd0590e7a0e21dd40b851df25f35ebd0
+  - enabled: 1
+    path: Assets/Scenes/You_Win.unity
+    guid: e538d5b2ee8c24142a00a98c2316de0a
+  m_configObjects: {}
