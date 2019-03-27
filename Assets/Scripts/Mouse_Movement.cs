@@ -9,14 +9,15 @@ public class Mouse_Movement : MonoBehaviour
     Material mat;
     public Texture Coin_Color;
 
-    public float speed = .5f;
-    public float rotation = 8f;
+    public float speed = .35f;
+    public float rotation = 6f;
     public int score = 0;
     public int nuts = 0;
     public int maxNuts = 12;
     public float speedMod = 0f;
     public int lives;
     public float constant = .005f;
+    float emergencySpeed = .5f;
 
     public Joystick joystick;
 
@@ -82,19 +83,32 @@ public class Mouse_Movement : MonoBehaviour
         if (tag == "Coin")
         {
             Destroy(coll.collider.gameObject);
-            speedMod = speedMod + 1;
+            speedMod = speedMod + 2.5f;
             score = score + 50;
             nuts++;
 
             if (speed >= .17)
             {
                 speed = (speed - speedMod * constant);
+                emergencySpeed = speed;
                 print("Speed is: " + speed);
             }
             print("Score is: " + score);
             GameObject.Find("scoreUI").GetComponent<Text>().text = "Current score: > " + score;
             GameObject.Find("nutsUI").GetComponent<Text>().text = "Nuts collected: > " + nuts + "/" + maxNuts;
         }
+
+        /*if (tag == "Maze")
+        {
+            if (speed >= .4)
+            {
+                speed = .1f;
+            }
+            else
+            {
+                speed = emergencySpeed;
+            }
+        }*/
 
         if (tag == "Platform")
         {
@@ -115,7 +129,7 @@ public class Mouse_Movement : MonoBehaviour
             //GetComponent<Renderer>().material.mainTexture = Coin_Color;
             mat.color = Color.red;
             //mat.color = Color.yellow;
-            speed = .6f;
+            speed = .35f;
             print("Speed is: " + speed);
         }
     }
