@@ -9,8 +9,9 @@ public class Mouse_Movement : MonoBehaviour
     Material mat;
     public Texture Coin_Color;
 
-    public float speed = .35f;
-    public float rotation = 6f;
+    private float speed = .35f;
+    private float rotation = 3.5f;
+    //public float rotation = 6f;
     public int score = 0;
     public int nuts = 0;
     public int maxNuts = 12;

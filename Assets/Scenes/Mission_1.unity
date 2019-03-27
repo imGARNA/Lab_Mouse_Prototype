@@ -626,7 +626,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &232521310
 PrefabInstance:
@@ -1311,7 +1311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1011707640
 PrefabInstance:
@@ -1963,7 +1963,7 @@ RectTransform:
   - {fileID: 2050198642}
   - {fileID: 1971641418}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2150,7 +2150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707407198
 GameObject:
@@ -2241,7 +2241,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1709592073
 PrefabInstance:
@@ -2416,8 +2416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Coin_Color: {fileID: 0}
-  speed: 0.25
-  rotation: 6
   score: 0
   nuts: 0
   maxNuts: 0
@@ -3073,7 +3071,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050198641
 GameObject:
@@ -3171,6 +3169,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050198641}
   m_CullTransparentMesh: 0
+--- !u!1001 &2055007648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3259771648086027240, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_Name
+      value: Lab_Mouse_Mk1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -41.887455
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 394640281, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1801436191}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
 --- !u!1001 &2090304134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3297,6 +3368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lab_Mouse_Mk1
       objectReference: {fileID: 0}
+    - target: {fileID: 3259771648086027240, guid: 3deb21509fa919c4c89437e4e5d60d62,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3259771648085669832, guid: 3deb21509fa919c4c89437e4e5d60d62,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3352,10 +3428,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 394640283, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 394640281, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
       propertyPath: joystick
       value: 
@@ -3368,9 +3440,17 @@ PrefabInstance:
       propertyPath: constant
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 394640281, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
+      propertyPath: speed
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 534669904, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
       propertyPath: field of view
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 394640283, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
+      propertyPath: m_Mass
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deb21509fa919c4c89437e4e5d60d62, type: 3}
