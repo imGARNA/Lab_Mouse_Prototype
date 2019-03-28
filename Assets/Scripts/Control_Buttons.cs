@@ -15,7 +15,7 @@ public class Control_Buttons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void openMissionMenu()
@@ -60,5 +60,13 @@ public class Control_Buttons : MonoBehaviour
     public void startMisison3()
     {
         SceneManager.LoadScene("Mission_3");
+    }
+    public void getMaxNuts()
+    {
+
+    }
+    public void  setMaxNuts()
+    {
+
     }
 }
