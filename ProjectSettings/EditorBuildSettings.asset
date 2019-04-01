@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mission_3.unity
     guid: 4fd0755933b66c740bb83ec8bc3c742e
   - enabled: 1
+    path: Assets/Scenes/Mission_4.unity
+    guid: a41b99ce6613ffb4ba4852c98f7a7b0c
+  - enabled: 1
     path: Assets/Scenes/You_Win.unity
     guid: e538d5b2ee8c24142a00a98c2316de0a
   m_configObjects: {}

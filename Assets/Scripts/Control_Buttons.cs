@@ -61,6 +61,12 @@ public class Control_Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("Mission_3");
     }
+
+    public void startMisison4()
+    {
+        SceneManager.LoadScene("Mission_4");
+    }
+
     public void getMaxNuts()
     {
 
