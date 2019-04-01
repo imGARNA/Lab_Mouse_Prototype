@@ -9,7 +9,9 @@ public class Mouse_Movement : MonoBehaviour
     Material mat;
     public Texture Coin_Color;
 
-    private float speed = .35f;
+    public Slider speedBar;
+
+    public float speed = .35f;
     private float rotation = 3.5f;
     //public float rotation = 6f;
     public int score = 0;
@@ -25,6 +27,7 @@ public class Mouse_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = .35f;
         updateUI();
         mat = GetComponent<MeshRenderer>().material;
         //PlayerPrefs.SetInt("score", 0);
@@ -94,6 +97,7 @@ public class Mouse_Movement : MonoBehaviour
                 emergencySpeed = speed;
                 print("Speed is: " + speed);
             }
+            speedBar.value = speed;
             print("Score is: " + score);
             GameObject.Find("scoreUI").GetComponent<Text>().text = "Current score: > " + score;
             GameObject.Find("nutsUI").GetComponent<Text>().text = "Nuts collected: > " + nuts + "/" + maxNuts;
@@ -129,9 +133,25 @@ public class Mouse_Movement : MonoBehaviour
             Destroy(coll.collider.gameObject);
             //GetComponent<Renderer>().material.mainTexture = Coin_Color;
             mat.color = Color.red;
-            //mat.color = Color.yellow;
+            score = score*2;
+            GameObject.Find("scoreUI").GetComponent<Text>().text = "Current score: > " + score;
+        }
+        if (tag == "Yellow_PowerUP")
+        {
+            Destroy(coll.collider.gameObject);
+            mat.color = Color.yellow;
             speed = .35f;
-            print("Speed is: " + speed);
+            speedBar.value = speed;
+
+            GameObject.Find("Message").GetComponent<Text>().text = "Speed Reset!";
+        }
+        if (tag == "Green_PowerUP")
+        {
+
+        }
+        if (tag == "Purple_PowerUP")
+        {
+            //Riddle
         }
     }
 

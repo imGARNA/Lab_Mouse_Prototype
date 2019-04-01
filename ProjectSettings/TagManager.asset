@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Red_PowerUP
   - Maze
+  - Yellow_PowerUP
+  - Green_PowerUP
+  - Purple_PowerUP
   layers:
   - Default
   - TransparentFX

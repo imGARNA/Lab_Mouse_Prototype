@@ -56,14 +56,5 @@ public class Timer_Script : MonoBehaviour
         }
 
         counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-
-        //counterText.text = "Time's Up!";
-
-        //counterText.text = seconds.ToString(":" + "00");
-        /*
-        minutes = (int)(Time.time / 60f);
-        seconds = (int)(Time.time % 60f);
-        counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-        */
     }
 }
