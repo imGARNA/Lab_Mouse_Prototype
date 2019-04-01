@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/You_Win.unity
     guid: e538d5b2ee8c24142a00a98c2316de0a
+  - enabled: 1
+    path: Assets/Scenes/Riddle#1.unity
+    guid: bffc9bce62b09914e85d5b3b902135bb
   m_configObjects: {}

@@ -16,11 +16,10 @@ public class Mouse_Movement : MonoBehaviour
     //public float rotation = 6f;
     public int score = 0;
     public int nuts = 0;
-    public int maxNuts = 12;
+    private int maxNuts = 12;
     public float speedMod = 0f;
-    public int lives;
-    public float constant = .005f;
-    float emergencySpeed = .5f;
+    private float constant = .001f;
+    //float emergencySpeed = .5f;
 
     public Joystick joystick;
 
@@ -28,6 +27,8 @@ public class Mouse_Movement : MonoBehaviour
     void Start()
     {
         speed = .35f;
+        speedMod = 0f;
+        score = 0;
         updateUI();
         mat = GetComponent<MeshRenderer>().material;
         //PlayerPrefs.SetInt("score", 0);
@@ -94,7 +95,7 @@ public class Mouse_Movement : MonoBehaviour
             if (speed >= .17)
             {
                 speed = (speed - speedMod * constant);
-                emergencySpeed = speed;
+                //emergencySpeed = speed;
                 print("Speed is: " + speed);
             }
             speedBar.value = speed;
