@@ -12,7 +12,7 @@ public class Mouse_Movement : MonoBehaviour
     public Slider speedBar;
 
     public float speed = .35f;
-    private float rotation = 3.5f;
+    private float rotation = 2f;
     //public float rotation = 6f;
     public int score = 0;
     public int nuts = 0;
