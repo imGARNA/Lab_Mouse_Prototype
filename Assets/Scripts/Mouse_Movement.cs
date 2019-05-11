@@ -9,6 +9,8 @@ public class Mouse_Movement : MonoBehaviour
     Material mat;
     public Texture Coin_Color;
 
+    public float extraMinute = 0f;
+
     public Slider speedBar;
 
     public float speed = .35f;
@@ -20,6 +22,9 @@ public class Mouse_Movement : MonoBehaviour
     public float speedMod = 0f;
     private float constant = .001f;
     //float emergencySpeed = .5f;
+    public int riddleAvailable = 0;
+
+    public Button AnswerRiddle;
 
     public Joystick joystick;
 
@@ -31,6 +36,7 @@ public class Mouse_Movement : MonoBehaviour
         score = 0;
         updateUI();
         mat = GetComponent<MeshRenderer>().material;
+        GameObject.Find("Riddle").GetComponent<Text>().text = "Riddles Availabe: " + riddleAvailable;
         //PlayerPrefs.SetInt("score", 0);
     }
 
@@ -104,18 +110,6 @@ public class Mouse_Movement : MonoBehaviour
             GameObject.Find("nutsUI").GetComponent<Text>().text = "Nuts collected: > " + nuts + "/" + maxNuts;
         }
 
-        /*if (tag == "Maze")
-        {
-            if (speed >= .4)
-            {
-                speed = .1f;
-            }
-            else
-            {
-                speed = emergencySpeed;
-            }
-        }*/
-
         if (tag == "Platform")
         {
             if(nuts >= 12)
@@ -133,14 +127,14 @@ public class Mouse_Movement : MonoBehaviour
         {
             Destroy(coll.collider.gameObject);
             //GetComponent<Renderer>().material.mainTexture = Coin_Color;
-            mat.color = Color.red;
+            //mat.color = Color.red;
             score = score*2;
             GameObject.Find("scoreUI").GetComponent<Text>().text = "Current score: > " + score;
         }
         if (tag == "Yellow_PowerUP")
         {
             Destroy(coll.collider.gameObject);
-            mat.color = Color.yellow;
+            //mat.color = Color.yellow;
             speed = .35f;
             speedBar.value = speed;
 
@@ -153,6 +147,13 @@ public class Mouse_Movement : MonoBehaviour
         if (tag == "Purple_PowerUP")
         {
             //Riddle
+            extraMinute = 1f;
+            riddleAvailable++;
+            Destroy(coll.collider.gameObject);
+            GameObject.Find("Riddle").GetComponent<Text>().text = "Riddles Availabe: " + riddleAvailable;
+            AnswerRiddle.gameObject.SetActive(true);
+            //GameObject.Find("AnswerRiddle").GetComponent<Button>();
+            nuts += 5;
         }
     }
 

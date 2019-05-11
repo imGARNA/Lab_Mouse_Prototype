@@ -24,6 +24,7 @@ public class Timer_Script : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        ///////////gameObject.GetComponent<Mouse_Movement>().extraMinute += minutes;
         //frames = (int)(Time.time % 60f);
         //frames = frames + 1;
         //seconds = seconds + .015f;
